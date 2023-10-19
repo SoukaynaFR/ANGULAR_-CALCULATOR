@@ -1,0 +1,65 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  margin-top: 5%;
+  width: 400px;
+  height: 80vh;
+  background-color: #feeafa;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #b6a6ca;
+}
+
+.display {
+  margin: 5%;
+}
+
+input[type="text"] {
+  width: 360px;
+  height: 60px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 5%;
+  border: 2px solid #b6a6ca;
+  background-color: #f4f4f9;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px #b6a6ca;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  margin: 5%;
+}
+
+.keypad button {
+  width: 80px;
+  height: 60px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: #cbc0d3;
+  border: none;
+  color: #22223b;
+  box-shadow: 5px 5px 5px #b6a6ca;
+}
+
+.keypad button.equal {
+  position: relative;
+  grid-column: span 2;
+  width: 180px;
+  height: 60px;
+  background-color: #b6a6ca;
+  box-shadow: none;
+}
+
+.keypad button:hover {
+  background-color: #c8b6ff;
+}
